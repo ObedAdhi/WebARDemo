@@ -3,9 +3,9 @@ AFRAME.registerComponent('drag-rotate-component',{
   init : function(){
     this.isMouseDown = false
     this.posX = 0
-    document.addEventListener('mousedown', this.onMouseDown.bind(this))
-    document.addEventListener('mouseup', this.onMouseUp.bind(this))
-    document.addEventListener('mousemove', this.onMouseMove.bind(this))
+    document.addEventListener('pointerdown', this.onMouseDown.bind(this))
+    document.addEventListener('pointerup', this.onMouseUp.bind(this))
+    document.addEventListener('pointermove', this.onMouseMove.bind(this))
   },
   onMouseDown : function(event) {
     this.isMouseDown = true
